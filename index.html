@@ -29,18 +29,79 @@
     <script>
 
         // 1. Create a let variable called isDark. It should be initialized to false.
+       
+        let isDark = false
 
-        // 2. JQuery: Write the code for accessing when the document is ready
+        // // 2. JQuery: Write the code for accessing when the document is ready
+       
+        // $("document").ready(() => {
+        //     // code and such
+        // })
 
-        // 3. Write a click event handler for the button. It should link to a function called "changeMode"
+        // // 3. Write a click event handler for the button. It should link to a function called "changeMode"
+       
+        // $("#btn-dark-mode").on("click", changeMode)
+        
+        //     function changeMode() {
+        //     //code to change mode
+        //     }
+        
+        // // 4. Inside the function "changeMode", check if isDark is true or false
+       
+        // $("#btn-dark-mode").on("click", changeMode)
 
-        // 4. Inside the function "changeMode", check if isDark is true or false
+        //     function changeMode() {
+        //         if(isDark) {
+        //             // code that does something
+        //         }
+        //         else {
+        //             // code that does something
+        //         }
+        //     }
 
-        // 5. If it's true, change the background color of the body to white, and the foreground color to #111. Change the color of the header to #111. Change the button text to 🌑
+        // // 5. If it's true, change the background color of the body to white, and the foreground color to #111. Change the color of the header to #111. Change the button text to 🌑
 
-        // 6. If it's false, change the background color of the body to #111, and the foreground color to aliceblue. Change the color of the header to aliceblue. Change the button text to 🌕
+        //     $("#btn-dark-mode").on("click", changeMode)
 
+        //     function changeMode() {
+        //         if(isDark) {
+        //             $("body").css("background-color", "white").css("color", "#111")
+        //             $(".header").css("color", "#111")
+        //             $(this).text("🌑")
+        //         }
+        //         else {
+        //             // do something entirely different here
+        //         }
+        //     }
+        
+        // // 6. If it's false, change the background color of the body to #111, and the foreground color to aliceblue. Change the color of the header to aliceblue. Change the button text to 🌕
+
+        // $("#btn-dark-mode").on("click", changeMode)
+
+        //     function changeMode() {
+        //         if(isDark) {
+        //             $("body").css("background-color", "white").css("color", "#111")
+        //             $(".header").css("color", "aliceblue")
+        //             $(this).text("🌕")
+        //         }
+        //     }
         // 7. Finally, change the value of isDark to whatever it wasn't before
+
+        $("#btn-dark-mode").on("click", changeMode)
+
+            function changeMode() {
+                if(isDark) {
+                    $("body").css("background-color", "white").css("color", "#111")
+                    $(".header").css("color", "#111")
+                    $(this).text("🌑")
+                }
+                else {
+                    $("body").css("background-color", "#111").css("color", "aliceblue")
+                    $(".header").css("color", "aliceblue")
+                    $(this).text("🌕")
+                }
+                isDark = !isDark
+            }
 
     </script>
 </body>
